@@ -28,7 +28,6 @@
 
 - [🤔 What is User Intention to Diagram Generation?](#-what-is-user-intention-to-diagram-generation)
 - [⚡ Get started](#-get-started)
-- [📽️ Video Overview](#️-video-overview)
 - [🤖 Supported AI Agents](#-supported-ai-agents)
 - [🔧 Diagramly CLI Reference](#-diagramly-cli-reference)
 - [📚 Core philosophy](#-core-philosophy)
@@ -37,10 +36,6 @@
 - [🔧 Prerequisites](#-prerequisites)
 - [📖 Learn more](#-learn-more)
 - [📋 Detailed process](#-detailed-process)
-- [🔍 Troubleshooting](#-troubleshooting)
-- [👥 Maintainers](#-maintainers)
-- [💬 Support](#-support)
-- [🙏 Acknowledgements](#-acknowledgements)
 - [📄 License](#-license)
 
 ## 🤔 What is User Intention to Diagram Generation?
