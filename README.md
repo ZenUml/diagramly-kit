@@ -15,12 +15,7 @@
     </strong>
 </p>
 
-<p align="center">
-    <a href="https://github.com/github/diagramly-kit/actions/workflows/release.yml"><img src="https://github.com/github/diagramly-kit/actions/workflows/release.yml/badge.svg" alt="Release"/></a>
-    <a href="https://github.com/github/diagramly-kit/stargazers"><img src="https://img.shields.io/github/stars/github/diagramly-kit?style=social" alt="GitHub stars"/></a>
-    <a href="https://github.com/github/diagramly-kit/blob/main/LICENSE"><img src="https://img.shields.io/github/license/github/diagramly-kit" alt="License"/></a>
-    <a href="https://github.github.io/diagramly-kit/"><img src="https://img.shields.io/badge/docs-GitHub_Pages-blue" alt="Documentation"/></a>
-</p>
+
 
 ---
 
