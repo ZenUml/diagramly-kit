@@ -1,5 +1,4 @@
 <div align="center">
-    <img src="./media/logo_small.webp"/>
     <h1>🌱 Diagramly Kit</h1>
     <h3><em>Transform user intentions into visual diagrams automatically.</em></h3>
 </div>
