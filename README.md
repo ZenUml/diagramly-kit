@@ -9,6 +9,13 @@
 </p>
 
 <p align="center">
+    <strong>
+    This Project is based on Spec-Kit (https://github.com/github/spec-kit)
+    Licensed under MIT License
+    </strong>
+</p>
+
+<p align="center">
     <a href="https://github.com/github/diagramly-kit/actions/workflows/release.yml"><img src="https://github.com/github/diagramly-kit/actions/workflows/release.yml/badge.svg" alt="Release"/></a>
     <a href="https://github.com/github/diagramly-kit/stargazers"><img src="https://img.shields.io/github/stars/github/diagramly-kit?style=social" alt="GitHub stars"/></a>
     <a href="https://github.com/github/diagramly-kit/blob/main/LICENSE"><img src="https://img.shields.io/github/license/github/diagramly-kit" alt="License"/></a>
@@ -108,12 +115,6 @@ Use **`/diagramlykit.diagram`** with different types of diagrams:
 ```
 
 For detailed step-by-step instructions, see our [comprehensive guide](./diagram-generation.md).
-
-## 📽️ Video Overview
-
-Want to see Diagramly Kit in action? Watch our [video overview](https://www.youtube.com/watch?v=a9eR1xsfvHg&pp=0gcJCckJAYcqIYzv)!
-
-[![Diagramly Kit video header](/media/diagramly-kit-video-header.jpg)](https://www.youtube.com/watch?v=a9eR1xsfvHg&pp=0gcJCckJAYcqIYzv)
 
 ## 🤖 Supported AI Agents
 
@@ -403,70 +404,7 @@ Or to explore alternative visualizations:
 Show the same system architecture but in a component diagram format instead of deployment diagram.
 ```
 
-### **STEP 4:** Generate specialized diagrams
-
-Use specialized commands for different types of diagrams:
-
-- `/diagramlykit.architecture` - for system architecture diagrams
-- `/diagramlykit.flow` - for flowcharts and process diagrams
-- `/diagramlykit.uml` - for UML class, sequence, and activity diagrams
-- `/diagramlykit.visualize` - for data visualization diagrams
-
-Examples:
-
-```text
-/diagramlykit.flow Create a flowchart showing the user registration process from sign up to account activation with decision points for email verification.
-```
-
-```text
-/diagramlykit.uml Generate a class diagram for the e-commerce system with classes User, Product, Order, and Payment, showing their relationships.
-```
-
-### **STEP 5:** Export your diagrams
-
-Use `/diagramlykit.export` to save your diagrams in different formats:
-
-```text
-/diagramlykit.export Export the current diagram as PNG, SVG, and PDF files.
-```
-
-This makes it easy to share your diagrams with stakeholders or include them in documentation.
-
-</details>
-
 ---
-
-## 🔍 Troubleshooting
-
-### Git Credential Manager on Linux
-
-If you're having issues with Git authentication on Linux, you can install Git Credential Manager:
-
-```bash
-#!/usr/bin/env bash
-set -e
-echo "Downloading Git Credential Manager v2.6.1..."
-wget https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.1/gcm-linux_amd64.2.6.1.deb
-echo "Installing Git Credential Manager..."
-sudo dpkg -i gcm-linux_amd64.2.6.1.deb
-echo "Configuring Git to use GCM..."
-git config --global credential.helper manager
-echo "Cleaning up..."
-rm gcm-linux_amd64.2.6.1.deb
-```
-
-## 👥 Maintainers
-
-- Den Delimarsky ([@localden](https://github.com/localden))
-- John Lam ([@jflam](https://github.com/jflam))
-
-## 💬 Support
-
-For support, please open a [GitHub issue](https://github.com/github/diagramly-kit/issues/new). We welcome bug reports, feature requests, and questions about using User Intention to Diagram Generation.
-
-## 🙏 Acknowledgements
-
-This project is heavily influenced by and based on the work and research of [John Lam](https://github.com/jflam).
 
 ## 📄 License
 
