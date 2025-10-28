@@ -103,7 +103,7 @@ Use **`/diagramlykit.diagram`** with different types of diagrams:
 /diagramlykit.diagram Generate a flowchart showing the user registration process from sign up to account activation.
 ```
 
-For detailed step-by-step instructions, see our [comprehensive guide](./diagram-generation.md).
+For detailed step-by-step instructions, see our comprehensive guide in this README.
 
 ## 🤖 Supported AI Agents
 
@@ -270,7 +270,7 @@ If you encounter issues with an agent, please open an issue so we can refine the
 
 ## 📖 Learn more
 
-- **[Complete User Intention to Diagram Generation Methodology](./diagram-generation.md)** - Deep dive into the full process
+- **Complete User Intention to Diagram Generation Methodology** - Deep dive into the full process
 - **[Detailed Walkthrough](#-detailed-process)** - Step-by-step implementation guide
 
 ---
