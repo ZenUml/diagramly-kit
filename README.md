@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>🌱 Diagramly Kit</h1>
+    <h1>🌱 ZenUML Diagramly Kit</h1>
     <h3><em>Transform user intentions into visual diagrams automatically.</em></h3>
 </div>
 
@@ -9,7 +9,7 @@
 
 <p align="center">
     <strong>
-    This Project is based on Spec-Kit (https://github.com/github/spec-kit)
+    This Project is based on Spec-Kit (https://github.com/github/spec-kit), adapted for ZenUML Diagramly Kit
     Licensed under MIT License
     </strong>
 </p>
@@ -47,7 +47,7 @@ Choose your preferred installation method:
 Install once and use everywhere:
 
 ```bash
-uv tool install diagramly-cli --from git+https://github.com/github/diagramly-kit.git
+uv tool install diagramly-cli --from git+https://github.com/zenuml/diagramly-kit.git
 ```
 
 Then use the tool directly:
@@ -60,7 +60,7 @@ diagramly check
 To upgrade diagramly run:
 
 ```bash
-uv tool install diagramly-cli --force --from git+https://github.com/github/diagramly-kit.git
+uv tool install diagramly-cli --force --from git+https://github.com/zenuml/diagramly-kit.git
 ```
 
 #### Option 2: One-time Usage
@@ -68,7 +68,7 @@ uv tool install diagramly-cli --force --from git+https://github.com/github/diagr
 Run directly without installing:
 
 ```bash
-uvx --from git+https://github.com/github/diagramly-kit.git diagramly init <PROJECT_NAME>
+uvx --from git+https://github.com/zenuml/diagramly-kit.git diagramly init <PROJECT_NAME>
 ```
 
 **Benefits of persistent installation:**
@@ -200,27 +200,7 @@ Essential commands for the User Intention to Diagram Generation workflow:
 
 | Command                  | Description                                                           |
 |--------------------------|-----------------------------------------------------------------------|
-| `/diagramlykit.diagram`       | Generate diagrams from user requirements (Mermaid, PlantUML, Graphviz, etc.) |
-| `/diagramlykit.architecture`  | Generate system architecture diagrams based on your specifications    |
-| `/diagramlykit.flow`          | Create flowcharts and process diagrams from your descriptions         |
-| `/diagramlykit.uml`           | Generate UML diagrams including class, sequence, and activity diagrams |
-| `/diagramlykit.visualize`     | Create data visualization diagrams from your data models             |
-
-#### Optional Commands
-
-Additional commands for enhanced diagram generation:
-
-| Command              | Description                                                           |
-|----------------------|-----------------------------------------------------------------------|
-| `/diagramlykit.clarify`   | Clarify underspecified diagram requirements (recommended before complex diagrams) |
-| `/diagramlykit.analyze`   | Analyze and validate diagram accuracy and completeness |
-| `/diagramlykit.export`    | Export diagrams in various formats (PNG, SVG, PDF, etc.) |
-
-### Environment Variables
-
-| Variable         | Description                                                                                    |
-|------------------|------------------------------------------------------------------------------------------------|
-| `SPECIFY_FEATURE` | Override feature detection for non-Git repositories. Set to the feature directory name (e.g., `001-photo-albums`) to work on a specific feature when not using Git branches.<br/>**Must be set in the context of the agent you're working with prior to using `/diagramlykit.plan` or follow-up commands. |
+| `/diagramlykit.diagram`       | Generate diagrams from user requirements (Zenuml, Mermaid, PlantUML, Graphviz, etc.) |
 
 ## 📚 Core philosophy
 
@@ -298,7 +278,7 @@ diagramly init . --force
 diagramly init --here --force
 ```
 
-![Diagramly CLI bootstrapping a new project in the terminal](./media/diagramly_cli.gif)
+*Diagramly CLI bootstrapping a new project in the terminal*
 
 You will be prompted to select the AI agent you are using. You can also proactively specify it directly in the terminal:
 
@@ -332,9 +312,9 @@ diagramly init <project_name> --ai claude --ignore-agent-tools
 
 Go to the project folder and run your AI agent. In our example, we're using `claude`.
 
-![Bootstrapping Claude Code environment](./media/bootstrap-claude-code.gif)
+*Bootstrapping Claude Code environment*
 
-You will know that things are configured correctly if you see the `/diagramlykit.diagram`, `/diagramlykit.architecture`, `/diagramlykit.flow`, `/diagramlykit.uml`, and `/diagramlykit.visualize` commands available.
+You will know that things are configured correctly if you see the `/diagramlykit.diagram` command available.
 
 The environment will be set up with the necessary templates and configurations for diagram generation.
 
@@ -352,46 +332,6 @@ Generate a system architecture diagram showing the relationship between users, w
 ```
 
 After this prompt is entered, you should see your AI agent generate the appropriate diagram code, visualize it, and provide you with the diagram in multiple formats.
-
-At this stage, your project folder contents should resemble the following:
-
-```text
-└── .diagramly
-    ├── memory
-    │	 └── constitution.md
-    ├── scripts
-    │	 ├── check-prerequisites.sh
-    │	 ├── common.sh
-    │	 ├── diagram-generation.sh
-    │	 ├── architecture-diagram.sh
-    │	 └── visualize.sh
-    ├── diagrams
-    │	 └── 001-architecture
-    │	     ├── diagram.md
-    │	     ├── diagram.mmd (Mermaid)
-    │	     ├── diagram.puml (PlantUML)
-    │	     └── diagram.png
-    └── templates
-        ├── diagram-template.md
-        ├── architecture-template.md
-        └── flow-template.md
-```
-
-### **STEP 3:** Refine your diagram (optional)
-
-You can refine your diagram by providing additional details or requesting changes to the existing diagram.
-
-Example refinement prompt:
-
-```text
-Make the database layer more detailed by showing the user, order, and product tables with their key fields.
-```
-
-Or to explore alternative visualizations:
-
-```text
-Show the same system architecture but in a component diagram format instead of deployment diagram.
-```
 
 ---
 
